@@ -1,0 +1,45 @@
+{% extends "core/base.html" %}
+{% block title %}
+Acerca De
+{% endblock title %}
+{% load static %} 
+{% block content %}
+<section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1>ABOUT US</em></h1>
+                    <p>We offer the most complete birding and bird photo trips in Ecuador, the Amazon jungle, and, the Galapagos Islands. Enjoy our scheduled and custom trips with the most knowledgeable, friendly, and passionate birding and bird photo guides in Ecuador.</p>
+                </div>
+                <br>
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="{% static 'core/img/about_1.png' %}" data-lightbox="image"><img src="{% static 'core/img/about_1.png' %}" alt="image 1"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="{% static 'core/img/about_4.jpg' %}" data-lightbox="image"><img src="{% static 'core/img/about_4.jpg' %}" alt="image 2"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-6">
+                                    <a href="{% static 'core/img/about_3.jpg' %}" data-lightbox="image"><img src="{% static 'core/img/about_3.jpg' %}" alt="image 3"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3">
+                                    <a href="{% static 'core/img/about_2.png' %}" data-lightbox="image"><img src="{% static 'core/img/about_2.png' %}" alt="image 4"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3">
+                                    <a href="{% static 'core/img/about_5.jpg' %}" data-lightbox="image"><img src="{% static 'core/img/about_5.jpg' %}" alt="image 5"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+{% endblock content %}

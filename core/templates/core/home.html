@@ -1,0 +1,76 @@
+{% extends "core/base.html" %} {% block title %} Home {% endblock title %}
+<!--Estilos y fuentes del template-->
+{% load static %} 
+{% block content %}
+<div class="slider">
+  <div class="Modern-Slider content-section" id="top">
+    <!-- Item -->
+    <div class="item item-1">
+      <div class="img-fill">
+        <div class="image"></div>
+        <div class="info">
+          <div>
+            <h1>THE MAGIC BIRDING CIRCUIT <br /> ECUADOR</h1>
+            <p>
+              Welcome to the Magic Birding & Bird Photography Circuit of
+              Ecuador, the first of its kind in South America, 
+              <br />carefully
+              designed for birding and bird photography inside one of the most
+              biodiverse countries in the world.
+              <br />
+              The Magic Birding Circuit of Ecuador visits the most important and
+              biologically-diverse birding and bird photography locations
+              <br />
+              including our 7 strategically located private bird photography
+              reserves and our 5 award-winning bird photo Eco-lodges.
+            </p>
+            <div class="white-button button">
+              <a href="{% url 'about' %}">Conocer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item -->
+    <div class="item item-2">
+      <div class="img-fill">
+        <div class="image"></div>
+        <div class="info">
+          <div>
+            <h1>Please tell <br />your friends</h1>
+            <p>
+              Support templatemo by sharing a link to your friends. <br />Thank
+              you for helping us.
+            </p>
+
+            <div class="white-button button">
+              <a href="#featured">Share More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item -->
+    <div class="item item-3">
+      <div class="img-fill">
+        <div class="image"></div>
+        <div class="info">
+          <div>
+            <h1>Suspendisse suscipit<br />nulla sed</h1>
+            <p>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              <br />posuere cubilia Curae; Sed at massa turpis.
+            </p>
+
+            <div class="white-button button">
+              <a href="#featured">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
