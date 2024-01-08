@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
         });
 
 
-        $('.tabgroup > div').hide();
+        /* $('.tabgroup > div').hide();
             $('.tabgroup > div:first-of-type').show();
             $('.tabs a').click(function(e){
               e.preventDefault();
@@ -38,8 +38,7 @@ jQuery(document).ready(function($) {
             $(tabgroup).children('div').hide();
             $(target).show();
           
-        })
-
+        }) */
 
 
         $(".box-video").click(function(){
@@ -74,17 +73,17 @@ jQuery(document).ready(function($) {
         var navigation = $('nav');
         
         //when a nav link is clicked, smooth scroll to the section
-        navigation.on('click', 'a', function(event){
+        /* navigation.on('click', 'a', function(event){
             event.preventDefault(); //prevents previous event
             smoothScroll($(this.hash));
-        });
+        }); */
         
         //update navigation on scroll...
-        $(window).on('scroll', function(){
+       /*  $(window).on('scroll', function(){
             updateNavigation();
         })
         //...and when the page starts
-        updateNavigation();
+        updateNavigation(); */
         
         /////FUNCTIONS
         function updateNavigation(){

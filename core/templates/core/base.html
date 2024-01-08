@@ -124,13 +124,21 @@
         </li>
       </ul>
     </div>
-
+    
+    {% if request.path != '/' %}
     <div class="page-content">
       {% block content %}{% endblock content %}
       <section class="footer">
         <p>Copyright &copy; 2024 San Jorge Eco-Lodge . Design: TemplateMo</p>
       </section>
     </div>
+    {% else %}
+    {% block contentHome %}{% endblock contentHome %}
+    <section class="footer">
+        <p>Copyright &copy; 2024 San Jorge Eco-Lodge . Design: TemplateMo</p>
+      </section>
+    {% endif %}
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
