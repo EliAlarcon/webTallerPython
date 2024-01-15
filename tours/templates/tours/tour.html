@@ -1,0 +1,32 @@
+{% extends "core/base.html" %} 
+{% block title %} Tours {% endblock title %} 
+{% load static %} 
+{% block content %}
+<section id="featured" class="content-section">
+  <div>
+    <img src="{% static 'core/img/tour_encabezado.png' %}" width="100%" />
+  </div>
+  <hr />
+  <div class="section-heading">
+    <h1>TOURS</h1>
+  </div>
+  <div class="section-content">
+    <div class="owl-carousel owl-theme">
+      {% for tour in tours %}
+      <div class="item">
+        <div class="image">
+          <img src="{{tour.image.url}}" alt="tour" />
+          <div class="featured-button button">
+            <a href="{{tour.url_itineraries}}">DETAILED ITINERARIES</a>
+          </div>
+        </div>
+        <div class="text-content">
+          <h4>{{tour.title}}</h4>
+          <p>{{tour.content}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock content %}
