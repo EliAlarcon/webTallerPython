@@ -30,5 +30,4 @@ def contact(request):
             except:
                 return redirect(reverse('contact')+"?fail")
 
-            return redirect(reverse('contact')+"?ok")
     return render(request, "contact/contact.html", {'contact_form': contact_form})

@@ -106,21 +106,26 @@
         </ul>
       </nav>
       <ul class="social-icons">
+        {% if URL_FACEBOOK != null %}
         <li>
-          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="{{URL_FACEBOOK}}"><i class="fa fa-facebook"></i></a>
         </li>
+        {% endif %}
+        {% if URL_INSTAGRAM != null %}
         <li>
-          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="{{URL_INSTAGRAM}}"><i class="fa fa-instagram"></i></a>
         </li>
+        {% endif %}
+        {% if URL_FLICKR != null %}
         <li>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="{{URL_FLICKR}}"><i class="fa fa-image"></i></a>
         </li>
+        {% endif %}
+        {% if URL_TWITTER != null %}
         <li>
-          <a href="#"><i class="fa fa-rss"></i></a>
+          <a href="{{URL_TWITTER}}"><i class="fa fa-twitter"></i></a>
         </li>
-        <li>
-          <a href="#"><i class="fa fa-behance"></i></a>
-        </li>
+        {% endif %}
       </ul>
     </div>
     
@@ -128,14 +133,14 @@
     <div class="page-content">
       {% block content %}{% endblock content %}
       <section class="footer">
-        <p>Copyright &copy; 2024 San Jorge Eco-Lodge . Design: TemplateMo</p>
+        <p>Copyright &copy; 2024 The Magic Birding & Bird Photo Circuit of Ecuador · All Rights Reserved</p>
       </section>
     </div>
     {% else %}
     {% block contentHome %}{% endblock contentHome %}
     <section class="footer">
-        <p>Copyright &copy; 2024 San Jorge Eco-Lodge . Design: TemplateMo</p>
-      </section>
+        <p>Copyright &copy; 2024 The Magic Birding & Bird Photo Circuit of Ecuador · All Rights Reserved</p>
+    </section>
     {% endif %}
     
 
