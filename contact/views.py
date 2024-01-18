@@ -18,7 +18,7 @@ def contact(request):
             # Estructura del correo
             email=EmailMessage(
                 "SAN JORGE ECO-LODGES: Mensaje de contacto nuevo",
-                f"Hola, {name} <{email}>:\n\nEscribió:\n{message}.",
+                f"Hola, {name} <{email}>:\n\nEscribió:\n{message}.\n\nContacto: {phone}",
                 f"{email}",
                 ["magic.birding@gmail.com"],
                 reply_to=[email],
