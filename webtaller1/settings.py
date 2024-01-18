@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'core',
     'tours',
     'lodges',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,9 @@ MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Config Email
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '752bf1d17678c4'
+EMAIL_HOST_PASSWORD = 'f0704bf0c4fa11'
+EMAIL_PORT = '2525'

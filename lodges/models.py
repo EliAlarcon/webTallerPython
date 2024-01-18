@@ -17,3 +17,17 @@ class Lodge(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+# Modelos con relaciones a Lodge
+""" class Contenido(models.Model):
+    name=models.CharField(max_length=100, verbose_name='Título del contenido')
+    created=models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
+    updated=models.DateTimeField(auto_now=True, verbose_name='Fecha de edición')
+    
+    class Meta:
+        verbose_name = 'ModelName'
+        verbose_name_plural = 'ModelNames'
+
+    def __str__(self):
+        return  """

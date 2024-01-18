@@ -22,6 +22,7 @@ urlpatterns = [
     path('', include('core.urls')),
     path('tour/', include('tours.urls')),
     path('our-eco-lodge/', include('lodges.urls')),
+    path('contact/', include('contact.urls')),
     path('admin/', admin.site.urls),
 ]
 
