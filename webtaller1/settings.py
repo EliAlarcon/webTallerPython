@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'lodges',
     'contact',
     'social',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,10 @@ EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
 EMAIL_HOST_USER = '752bf1d17678c4'
 EMAIL_HOST_PASSWORD = 'f0704bf0c4fa11'
 EMAIL_PORT = '2525'
+
+# Config CKEDITOR
+CKEDITOR_CONFIGS={
+    'default':{
+        'toolbar': None,
+    }
+}

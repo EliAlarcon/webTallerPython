@@ -42,9 +42,6 @@
         </section>
         {% for lodge in lodges %}
         {{lodge.id}}
-          {% for section in lodge.sections.all %}
-            {{section.name}}
-          {% endfor %}
         {% endfor %}
 
       </div>

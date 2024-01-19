@@ -9,15 +9,18 @@ Itinerario
                     <div class="masonry">
                         <div class="row">
                             <div class="item">
-                                <div class="col-md-8">
+                                <div class="col-md-6">
                                     <a href="{{page.image.url}}" data-lightbox="image"><img src="{{page.image.url}}" alt="image 1"></a>
+                                    {% if user.is_authenticated %}
+                                    <a href="{% url 'admin:tours_itinerary_change' page.id %}" class="btn">Editar</a>
+                                    {% endif %} 
                                 </div>
                             </div>
                             <div class="item second-item">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <h1>{{page.title}}</h1>
                                     <h1><em>{{page.subtitle}}</em></h1>
-                                    <p>{{page.content}}</p>
+                                    <p>{{page.content|safe}}</p>
                                 </div>
                             </div>
                         </div>
