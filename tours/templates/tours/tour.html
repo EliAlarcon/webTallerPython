@@ -17,7 +17,13 @@
         <div class="image">
           <img src="{{tour.image.url}}" alt="tour" />
           <div class="featured-button button">
-            <a href="{{tour.url_itineraries}}">DETAILED ITINERARIES</a>
+            {% load pages_itineraries %}
+            {% get_pages as pages %}
+            {% for page in pages %}
+              {% if page.id == tour.id %}
+              <a href="{% url 'itinerary' page.id %}">DETAILED ITINERARIES</a>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
         <div class="text-content">
