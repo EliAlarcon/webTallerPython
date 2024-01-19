@@ -1,0 +1,27 @@
+{% extends "core/base.html" %}
+{% block title %}
+Itinerario
+{% endblock title %}
+{% load static %} 
+{% block content %}
+<section id="projects" class="content-section">
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="{{page.image.url}}" data-lightbox="image"><img src="{{page.image.url}}" alt="image 1"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <h1>{{page.title}}</h1>
+                                    <h1><em>{{page.subtitle}}</em></h1>
+                                    <p>{{page.content}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+{% endblock content %}
